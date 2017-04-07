@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/profilemenu"
+            android:icon="@drawable/eventicon"
+            android:title="내 프로필 보기"/>
+
+        <item
+            android:id="@+id/friendmenu"
+            android:icon="@drawable/noticemenu"
+            android:title="친구목록"/>
+        <item
+            android:id="@+id/findmenu"
+            android:icon="@drawable/myprofilemenu"
+            android:title="친구찾기"/>
+<!--
+        <item
+            android:id="@+id/alrammenu"
+            android:icon="@drawable/alrammenu"
+            android:title="알람설정"/>
+-->
+        <item
+            android:id="@+id/noticemenu"
+            android:icon="@drawable/alrammenu"
+            android:title="공지사항"/>
+
+        <item
+            android:id="@+id/qamenu"
+            android:icon="@drawable/suggestmenu"
+            android:title="도움말과의견보내기" />
+
+</menu>

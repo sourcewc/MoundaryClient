@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/notice_layout"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:id="@+id/setup_appbar">
+
+                <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabMode="fixed"
+                    android:background="#ffffff"
+                    app:tabMinWidth="90dp"
+                    android:id="@+id/setup_toolbar"
+                    android:gravity="top|start">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/back_img_btn"
+                        android:src="@drawable/logo_moundary_back"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="90dp"
+                        android:gravity="center"
+                        android:textColor="#cc663333"
+                        android:id="@+id/noticeappbar"
+                        android:text="알람 설정"/>
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.AppBarLayout>
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="2dp"
+                    android:id="@+id/first_alarm_container">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="알림받기"
+                        android:gravity="center"
+                        android:layout_marginLeft="19dp"
+                        android:textColor="@color/tabColor"
+                        android:textSize="17sp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/recieve_alaram_text"/>
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/parent_receive_alarm_switch"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="23dp"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:id="@+id/sixth_alarm_container"
+                    android:layout_below="@+id/first_alarm_container">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="동네할인정보"
+                        android:layout_marginLeft="19dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/sale_alarm"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sale_alarm_exp"
+                        android:layout_below="@+id/sale_alarm"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="19dp"
+                        android:textSize="12sp"
+                        android:text="동네할인에 대한 알람을 받습니다."
+                        android:layout_marginRight="10dp"/>
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sale_alarm_switch"
+                        android:layout_marginTop="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="23dp"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/horizontalScrollView"
+                        android:layout_alignBottom="@+id/sale_alarm"
+                        android:layout_alignEnd="@+id/sale_alarm_switch" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:id="@+id/seventh_alarm_container"
+                    android:layout_below="@+id/sixth_alarm_container">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="동네나눔 정보"
+                        android:layout_marginLeft="19dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/nanum_alarm"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/nanum_alarm_exp"
+                        android:layout_below="@+id/nanum_alarm"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="19dp"
+                        android:textSize="12sp"
+                        android:text="동네나눔에 대한 알람을 받습니다."
+                        android:layout_marginRight="10dp"/>
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/nanum_alarm_switch"
+                        android:layout_marginTop="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="23dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:id="@+id/eighth_alarm_container"
+                    android:layout_below="@+id/seventh_alarm_container">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="동네이벤트 정보"
+                        android:layout_marginLeft="19dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/event_alarm"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/event_alarm_exp"
+                        android:layout_below="@+id/event_alarm"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="19dp"
+                        android:textSize="12sp"
+                        android:text="동네이벤트에 대한 알람을 받습니다."
+                        android:layout_marginRight="10dp"/>
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/event_alarm_switch"
+                        android:layout_marginTop="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="23dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:id="@+id/nine_alarm_container"
+                    android:layout_below="@+id/eighth_alarm_container">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="동네상점 정보"
+                        android:layout_marginLeft="19dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/shop_alarm"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/shop_alarm_exp"
+                        android:layout_below="@+id/shop_alarm"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="19dp"
+                        android:textSize="12sp"
+                        android:text="동네상점에 대한 알람을 받습니다."
+                        android:layout_marginRight="10dp"/>
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/shop_alarm_switch"
+                        android:layout_marginTop="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="23dp"/>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

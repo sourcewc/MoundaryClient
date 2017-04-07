@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="212dp"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:gravity="center|bottom"
+    >
+
+    <FrameLayout
+        android:id="@+id/FrameLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="212dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/navi_header_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="#77000000"
+            android:alpha="0.5"></ImageView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/navi_header_image"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <TextView
+            android:id="@+id/navi_header_name"
+            android:layout_width="84dp"
+            android:layout_height="50dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal|bottom" />
+    </FrameLayout>
+
+</LinearLayout>

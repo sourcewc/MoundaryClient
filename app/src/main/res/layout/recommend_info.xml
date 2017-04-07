@@ -1,0 +1,174 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/location_text_area"
+                >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/infoText_layout"
+                    android:background="@drawable/login_back">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="40dp"
+                        android:text=""
+                        android:textSize="20sp"
+                        android:textColor="#ffffff"
+                        android:id="@+id/infocount_text"
+                        android:gravity="top|center"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/mylocation_text"
+                        android:text="대전광역시 서구 도안동 한라비발디 아파트"
+                        android:textSize="12sp"
+                        android:gravity="center|left"
+                        android:textColor="@color/tabColor"
+                        android:background="#ffffff"
+                        android:layout_marginLeft="20dp"
+                        android:layout_above="@+id/relativeLayout"
+                        android:layout_toEndOf="@+id/gps_icon"
+                        android:layout_gravity="center_horizontal|bottom" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/search"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/search"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="38dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="right|bottom" />
+
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/gps_icon"
+                    android:src="@drawable/logo_moundary_gps"
+                    android:background="#ffffff"
+                    android:layout_above="@+id/relativeLayout"
+                    android:layout_alignParentStart="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:layout_below="@+id/infoText_layout"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/relativeLayout">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/jeong"
+                        android:src="#ffffff"
+                        android:background="#ffffff"
+                        android:textSize="15sp"
+                        android:text="  동네 소식을 알려주세요"
+                        android:textColor="@color/tabColor"
+                        android:gravity="left|center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/pen"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/logo_moundary_pen"
+                        android:layout_above="@+id/btn_layout"
+                        android:layout_alignEnd="@+id/jeong" />
+
+                    <LinearLayout
+                        android:id="@+id/btn_layout"
+                        android:layout_below="@+id/jeong"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#ffffff"
+                                android:textSize="17dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/disscountbtn"
+                                android:id="@+id/disscount_info_list_btn"
+                                android:layout_below="@+id/jeong"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#ffffff"
+                                android:textSize="17dp"
+                                android:background="@drawable/nanumbtn"
+                                android:id="@+id/nanum_info_list_btn"
+                                android:layout_below="@+id/jeong"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_toRightOf="@+id/disscount_info_list_btn"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#ffffff"
+                                android:textSize="17dp"
+                                android:id="@+id/event_info_list_btn"
+                                android:background="@drawable/eventbtn"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_below="@+id/disscount_info_list_btn"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#ffffff"
+                                android:textSize="17dp"
+                                android:background="@drawable/shobtn"
+                                android:id="@+id/shop_info_list_btn"
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@+id/nanum_info_list_btn"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@+id/event_info_list_btn"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

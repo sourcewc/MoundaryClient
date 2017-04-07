@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/notice_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/info_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <ImageView
+                android:id="@+id/login_coverimg_upload"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:alpha="0.5"
+                android:scaleType="fitXY"
+                android:background="@drawable/login_back"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/login_profile_upload"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/profileedit_camera"
+                android:layout_gravity="center_horizontal|bottom" />
+        </FrameLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:text="프로필 이미지는 필수 입니다."
+                android:gravity="center|top"
+                android:textSize="15dp"
+                android:textColor="#e7dcdc"
+                android:layout_below="@+id/image"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textVie" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:textSize="15dp"
+                android:hint="이름을 입력해주세요."
+                android:maxLength="5"
+                android:textColorHint="@color/tabColor"
+                android:id="@+id/login_nickname_edit" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:text="주소 선택(필수)"
+                    android:textSize="15dp"
+                    android:gravity="center|left"
+                    android:textColor="@color/tabColor"
+                    android:id="@+id/login_address_edit" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="아이 나이 선택(필수)"
+                android:layout_weight="1.5"
+                android:gravity="center|left"
+                android:textSize="15dp"
+                android:textColor="@color/tabColor"
+                android:id="@+id/login_age_edit"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="90dp"
+                android:layout_marginLeft="90dp"
+                android:id="@+id/login_button"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/signforkakaonext"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1052375685044",
+    "firebase_url": "https://moundary-f68bc.firebaseio.com",
+    "project_id": "moundary-f68bc",
+    "storage_bucket": "moundary-f68bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052375685044:android:04c20e900e1a2db8",
+        "android_client_info": {
+          "package_name": "com.team.moundary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052375685044-mjsk84g50dplmg65vhp077j6u44e0aue.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.team.moundary",
+            "certificate_hash": "1159B14A95874CC47607ADB25903F390B5167905"
+          }
+        },
+        {
+          "client_id": "1052375685044-cdg73db5eaomgm6pdprl63rgvcp8g2re.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLZ_BkILPJQTFvyZiXNvIZpgCEqTJGiu0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052375685044-cdg73db5eaomgm6pdprl63rgvcp8g2re.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

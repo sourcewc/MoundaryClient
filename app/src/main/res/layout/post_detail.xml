@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/notice_layout"
+    android:background="#f4f1f1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/setup_appbar">
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/live_setting_toolbar"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|start"
+            app:tabMinWidth="90dp"
+            app:tabMode="fixed">
+
+
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f4f1f1">
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        style="@style/Widget.CardContent"
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/member_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:scaleType="fitXY"
+                            android:transitionName="@string/TransitionName" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@drawable/div">
+                            <TextView
+                                android:layout_weight="1.5"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/member_title"
+                                android:textColor="@color/tabColor"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?attr/textAppearanceListItem"/>
+
+                            <TextView
+                                android:id="@+id/write_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColor="#8c8888"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1.5"
+                                android:text="" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2.1"
+                                android:background="@drawable/logo_moundary_like"
+                                android:id="@+id/like_image"
+                                android:baselineAlignBottom="@+id/girls_group_member_image"
+                                android:paddingTop="2dp"></ImageView>
+
+                            <TextView
+                                android:id="@+id/like_count"
+                                android:layout_weight="2.2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textColor="#8c8888"
+                                android:layout_alignRight="@id/like_image"
+                                android:textSize="13sp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2.1"
+                                android:background="@drawable/logo_moundary_reply"
+                                android:id="@+id/reple_image"
+                                android:baselineAlignBottom="@+id/girls_group_member_image"
+                                android:paddingTop="2dp"></ImageView>
+
+                            <TextView
+                                android:id="@+id/reple_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColor="#8c8888"
+                                android:layout_alignRight="@id/like_image"
+                                android:gravity="center"
+                                android:layout_weight="2.2"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+
+
+                        <TextView
+                            android:id="@+id/post_detail_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#8c8888"
+                            android:layout_alignLeft="@id/like_image"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/member_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:id="@+id/back_img_btn"
+            android:src="@drawable/logo_moundary_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/noticeappbar"
+            android:textColor="#cc663333"
+            android:layout_centerHorizontal="true"
+            android:text="상세 페이지"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/reple_sendbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="입력"
+            android:textColor="@color/toolColor"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:id="@+id/input_reply_editext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="댓글쓰기"
+            android:background="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="right|center_vertical" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

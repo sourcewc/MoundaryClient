@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#ffffff"
+    android:layout_marginBottom="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/title_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#841e1e"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignStart="@+id/pushdetail" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:src="@drawable/pushdetail"
+                android:layout_marginRight="5dp"
+                android:id="@+id/pushdetail"
+                android:layout_alignTop="@+id/pushyes"
+                android:layout_toStartOf="@+id/pushyes"
+                android:layout_marginEnd="10dp" />
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:src="@drawable/pushyes"
+                android:id="@+id/pushyes"
+                android:layout_marginRight="5dp"
+                android:layout_below="@+id/title_news"
+                android:layout_toStartOf="@+id/pushno"
+                android:layout_marginEnd="10dp" />
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:src="@drawable/pushno"
+                android:id="@+id/pushno"
+                android:layout_marginEnd="20dp"
+                android:layout_alignTop="@+id/pushyes"
+                android:layout_toStartOf="@+id/textView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     "
+                android:textColor="#ba5050"
+                android:layout_marginRight="20dp"
+                android:id="@+id/textView"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/notice_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/friend_page_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="374dp"
+        android:background="#ffffff">
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/info_collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:tabMinWidth="90dp"
+            app:tabMode="fixed">
+
+            <FrameLayout
+                android:id="@+id/background_photo"
+                android:layout_width="match_parent"
+                android:layout_height="181dp"
+                />
+            <ImageView
+                android:id="@+id/coverimg"
+                android:layout_width="match_parent"
+                android:layout_height="181dp"
+                android:scaleType="fitXY"
+                android:src="#77000000"
+                android:alpha="0.5"
+                />
+
+            <ImageView
+                android:id="@+id/back_img_btn2"
+                android:layout_width="35dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/logo_moundary_back" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/friend_photo_imageview"
+                    android:layout_width="174dp"
+                    android:layout_height="174dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="90dp"
+                    android:baselineAlignBottom="false" />
+
+                <RelativeLayout
+                    android:id="@+id/textinput_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/friend_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/friend_location"
+                        android:layout_alignParentStart="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="신우철"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/friend_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/friend_requestbtn"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:text="대전광역시 서구 도안동 한라비발디"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/friend_requestbtn"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/friendsrequest"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/invisible_parser"
+                        android:layout_marginBottom="115dp"
+                        android:layout_above="@+id/friend_nickname"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="invisible"
+                        />
+
+                </RelativeLayout>
+            </FrameLayout>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/friend_list_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="1dp"
+                android:background="#ffffff"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="560dp"/>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

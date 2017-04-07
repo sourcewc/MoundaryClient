@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/notice_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/friend_totalrelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/info_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/textinput_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/info_toolbar"
+            android:orientation="vertical"
+            android:background="#eeecec">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="8dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/tabColor"
+                android:gravity="center|left"
+                android:text="이름"
+                android:textSize="17sp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/user_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingTop="8dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/tabColor"
+                android:gravity="center"
+                android:text=""
+                android:textSize="17sp"
+                android:layout_marginBottom="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/user_location1"
+                android:layout_below="@id/user_nickname"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/user_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" "
+                    android:textSize="14sp"
+                    android:gravity="end|center"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/tabColor"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:layout_below="@+id/user_location1"
+                android:id="@+id/mybaby_infomation_layout">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:gravity="center|left"
+                    android:textSize="17sp"
+                    android:text="아이 나이"
+                    android:background="#ffffff"
+                    android:textColor="@color/tabColor"/>
+                <TextView
+                    android:id="@+id/baby_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="end|center"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/tabColor"/>
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/frameLayout">
+
+            <ImageView
+                android:id="@+id/coverimg"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="#77000000"
+                android:alpha="0.5"
+                android:scaleType="fitXY"/>
+            <ImageView
+                android:id="@+id/back_img_btn"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/logo_moundary_back" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="edit_btn"
+                android:src="@drawable/logo_moundary_setting"
+                android:layout_alignBottom="@+id/friend_nickname"
+                android:layout_toEndOf="@+id/friend_nickname"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right|top" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/my_profile_photo"
+                android:layout_marginTop="20dp"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_below="@+id/frameLayout"
+                android:layout_centerHorizontal="true" />
+        </FrameLayout>
+
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

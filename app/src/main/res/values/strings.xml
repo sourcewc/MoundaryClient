@@ -1,0 +1,14 @@
+<resources>
+    <string name="TransitionName">TransitionName</string>
+    <string name="back_string_btn">뒤로가기</string>
+    <string name="app_name">Moundary</string>
+    <string name="friend_activity_menu">아아</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="action_pick">Action Pick</string>
+    <string name="action_pick_crop"><![CDATA[Action Pic & Crop]]></string>
+
+    <string name="img_area">image area</string>
+
+</resources>

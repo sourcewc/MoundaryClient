@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#be0918</color>
+    <color name="tabColor">#914041</color>
+    <color name="toolColor">#ed8585</color>
+    <color name="naviColor">#ffffff</color>
+    <color name="legacy_primary">#ffffff</color>
+    <color name="legacy_primary_dark">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="background_dark">#ffffff</color>
+    <color name="panel_background">#ffffff</color>
+    <drawable name="bg_select">#ed8585</drawable>
+    <drawable name="bg">#ffffff</drawable>
+
+</resources>

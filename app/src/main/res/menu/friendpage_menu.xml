@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/friend_menu"
+        android:title="@string/friend_activity_menu"
+        android:icon="@drawable/logo_moundary_option"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="all">
+                <item
+                    android:id="@+id/add_friend"
+                    android:title="친구추가" />
+                <item
+                    android:id="@+id/friend_follow"
+                    android:title="팔로우" />
+
+                <item
+                    android:id="@+id/reject_friend"
+                    android:title="친구끊기" />
+
+            </group>
+        </menu>
+    </item>
+
+</menu>
